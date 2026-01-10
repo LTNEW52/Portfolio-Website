@@ -3,50 +3,15 @@ import { motion } from 'framer-motion'
 import { FiX, FiDownload } from 'react-icons/fi'
 
 const CVPreviewModal = ({ isOpen, onClose }) => {
-  const [isDownloading, setIsDownloading] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
-  const handleDownloadPDF = async () => {
-    setIsDownloading(true)
-    try {
-      const { jsPDF } = await import('jspdf')
-      const img = new Image()
-      img.onload = () => {
-        const pdf = new jsPDF({
-          orientation: img.width > img.height ? 'landscape' : 'portrait',
-          unit: 'mm',
-          format: 'a4'
-        })
-        
-        // Calculate dimensions to fit A4 while maintaining aspect ratio
-        const pageWidth = pdf.internal.pageSize.getWidth()
-        const pageHeight = pdf.internal.pageSize.getHeight()
-        const imgAspect = img.width / img.height
-        
-        let imgWidth, imgHeight
-        
-        if (pageWidth / pageHeight > imgAspect) {
-          // Image is taller than page aspect ratio
-          imgHeight = pageHeight
-          imgWidth = imgHeight * imgAspect
-        } else {
-          // Image is wider than page aspect ratio
-          imgWidth = pageWidth
-          imgHeight = imgWidth / imgAspect
-        }
-        
-        // Center the image on the page
-        const x = (pageWidth - imgWidth) / 2
-        const y = (pageHeight - imgHeight) / 2
-        
-        pdf.addImage(img, 'PNG', x, y, imgWidth, imgHeight)
-        pdf.save('Labib_Tahmid_CV.pdf')
-        setIsDownloading(false)
-      }
-      img.src = '/CV.png'
-    } catch (error) {
-      console.error('Error downloading CV:', error)
-      setIsDownloading(false)
-    }
+  const handleDownloadPDF = () => {
+    const link = document.createElement('a')
+    link.href = '/LabibTahmid.pdf'
+    link.download = 'LabibTahmid.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
   }
 
   if (!isOpen) return null
@@ -82,21 +47,21 @@ const CVPreviewModal = ({ isOpen, onClose }) => {
         <div className="border-t dark:border-dark-300 pt-6">
           {/* CV Preview */}
           <div className="mb-6 bg-gray-100 dark:bg-dark-300 rounded-lg overflow-auto max-h-[600px]">
-            <img
-              src="/CV.png"
-              alt="Labib Tahmid CV"
-              className="w-full h-auto object-contain"
+            <embed
+              src="/LabibTahmid.pdf"
+              type="application/pdf"
+              className="w-full h-full"
+              style={{ height: '600px' }}
             />
           </div>
           
           <button
             onClick={handleDownloadPDF}
-            disabled={isDownloading}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 hover:bg-primary-700 disabled:bg-gray-400
+            className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 hover:bg-primary-700
                      text-white rounded-lg font-medium transition-colors duration-200 w-full justify-center"
           >
             <FiDownload size={20} />
-            {isDownloading ? 'Downloading...' : 'Download CV (PDF)'}
+            Download CV (PDF)
           </button>
         </div>
       </motion.div>
