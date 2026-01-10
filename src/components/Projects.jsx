@@ -79,7 +79,7 @@ const Projects = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="section-title">My Projects</h2>
+          <h2 className="section-title">My Portfolio</h2>
           <p className="section-subtitle">
             A showcase of my recent work and personal projects
           </p>

@@ -57,9 +57,9 @@ const Experience = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="section-title">Projects & Experience</h2>
+          <h2 className="section-title">Experience & Projects</h2>
           <p className="section-subtitle">
-            My projects and hands-on experience
+            My hands-on experience and projects
           </p>
         </motion.div>
 

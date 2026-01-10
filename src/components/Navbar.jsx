@@ -16,9 +16,9 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
     { name: 'Experience', href: '#experience' },
+    { name: 'Portfolio', href: '#projects' },
+    { name: 'Skills', href: '#skills' },
     { name: 'Education', href: '#education' },
   ]
 
