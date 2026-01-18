@@ -15,7 +15,7 @@ const Education = () => {
         'Computer Vision Project using YOLOv11',
         'Developed Python-based security tools',
       ],
-      gpa: 'CGPA: 3.53/4.00',
+      gpa: 'CGPA: 3.55/4.00',
     },
     {
       id: 2,
