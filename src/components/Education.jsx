@@ -46,6 +46,14 @@ const Education = () => {
 
   const certifications = [
     {
+      name: 'Introduction to Security Course',
+      issuer: 'Czech Technical University (CVUT)',
+      date: 'Feb 2026',
+      image: 'https://cybersecurity.bsy.fel.cvut.cz/certificates/2526-5b8d8267-4777-91a5-8c986cedb8a3.png',
+      skills: 'Security Fundamentals, Cybersecurity, Network Defense',
+      details: 'Completed the Introduction to Security Course offered by CVUT Stratosphere Laboratory, covering fundamental cybersecurity concepts, security principles, and practical defense strategies.',
+    },
+    {
       name: 'Endpoint Security',
       issuer: 'Cisco',
       date: 'Jan 2026',
@@ -62,20 +70,23 @@ const Education = () => {
       details: 'Hands-on bootcamp where I worked with AI and machine learning models. Built projects combining AI with IoT devices in real scenarios.',
     },
     {
-      name: 'Dean Award',
-      issuer: 'Green University of Bangladesh',
-      date: 'Nov 2025',
-      image: '/Dean Award_page-0001.jpg',
-      skills: 'Academic Excellence',
-      details: 'Recognition from my university for doing well in my studies and contributing to research projects. Shows consistent performance and dedication.',
-    },
-    {
       name: 'Ethical Hacker',
       issuer: 'Cisco',
       date: 'Jul 2025',
       image: '/EthicalHackerUpdate20250723-30-fm0qea_page-0001.jpg',
       skills: 'Penetration Testing, Vulnerability Assessment, Ethical Hacking',
       details: 'Learned how to find security weaknesses in systems and test their defenses. Focused on ethical hacking and helping organizations stay secure.',
+    },
+  ]
+
+  const awards = [
+    {
+      name: 'Dean Award',
+      issuer: 'Green University of Bangladesh',
+      date: 'Nov 2025',
+      image: '/Dean Award_page-0001.jpg',
+      skills: 'Academic Excellence',
+      details: 'Recognition from my university for doing well in my studies and contributing to research projects. Shows consistent performance and dedication.',
     },
   ]
 
@@ -137,6 +148,53 @@ const Education = () => {
                 </div>
               </motion.div>
             ))}
+
+            {/* Awards */}
+            <div className="mt-8">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-2 mb-6">
+                <FiAward className="text-primary-600" />
+                Awards
+              </h3>
+              <div className="grid gap-4">
+                {awards.map((award, index) => (
+                  <motion.div
+                    key={award.name}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    className="card p-5 hover:-translate-y-1 flex items-center gap-4"
+                  >
+                    <a
+                      href={award.image}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-shrink-0 hover:opacity-80 transition-opacity"
+                    >
+                      <img
+                        src={award.image}
+                        alt={award.name}
+                        className="w-32 h-24 object-cover rounded-lg border border-gray-300 dark:border-dark-400 shadow-md hover:shadow-lg transition-shadow"
+                      />
+                    </a>
+                    <div className="flex-1">
+                      <h4 className="font-semibold text-gray-900 dark:text-white">
+                        {award.name}
+                      </h4>
+                      <p className="text-sm text-primary-600 dark:text-primary-400 font-medium mb-2">
+                        {award.issuer} • {award.date}
+                      </p>
+                      <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        {award.details}
+                      </p>
+                      <p className="text-xs text-primary-600 dark:text-primary-500 font-medium">
+                        <span className="font-semibold">Skills:</span> {award.skills}
+                      </p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* Certifications */}

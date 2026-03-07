@@ -19,8 +19,8 @@ const About = () => {
 
   const stats = [
     { icon: <FiCode />, value: `${totalProjects}+`, label: 'Projects Completed' },
-    { icon: <FiShield />, value: `${securityProjects}+`, label: 'Security Projects' },
     { icon: <FiCpu />, value: `${mlProjects}+`, label: 'ML Projects' },
+    { icon: <FiShield />, value: `${securityProjects}+`, label: 'Security Projects' },
     { icon: <FiAward />, value: `${certifications}`, label: 'Certifications' },
   ]
 
@@ -48,31 +48,29 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-              A passionate cybersecurity enthusiast & machine learning developer
-            </h3>
             <div className="space-y-4 text-gray-600 dark:text-gray-400">
               <p>
                 I am a motivated undergraduate from Green University of Bangladesh, 
-                pursuing a B.Sc. in Computer Science and Engineering. My passion lies 
-                in cybersecurity and applied machine learning, where I combine technical 
-                skills with creative problem-solving.
+                pursuing a B.Sc. in Computer Science and Engineering. My primary focus 
+                is on machine learning and natural language processing, complemented by 
+                practical experience in cybersecurity and ethical hacking.
               </p>
               <p>
-                I have hands-on experience in ethical hacking, penetration testing labs, 
-                and Python-based security tools. My academic journey includes projects 
-                in NLP, computer vision using YOLOv11, and developing reconnaissance 
-                tools for OSINT workflows.
+                Currently working on my thesis in Machine Learning & NLP Research, focusing 
+                on advanced natural language processing using Python-based ML workflows. My 
+                academic journey includes hands-on projects in computer vision (YOLOv11), 
+                deep learning, and IoT integration. I combine technical skills with creative 
+                problem-solving to develop intelligent solutions.
               </p>
               <p>
-                Currently working on my thesis in Machine Learning & NLP at Green University, 
-                focusing on natural language processing using Python-based ML workflows. 
-                I'm always eager to learn and take on new challenges in the tech field.
+                Beyond research, I have hands-on experience in penetration testing, security 
+                tools development, and CTF challenges. I'm passionate about continuous learning 
+                and exploring cutting-edge technologies in AI, ML, and data science.
               </p>
             </div>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              {['Ethical Hacking', 'Penetration Testing', 'Machine Learning', 'Computer Vision', 'Python'].map((trait) => (
+              {['Machine Learning', 'NLP Research', 'Computer Vision', 'Deep Learning', 'Python', 'Cybersecurity'].map((trait) => (
                 <span
                   key={trait}
                   className="px-4 py-2 bg-primary-50 dark:bg-primary-900/30 text-primary-600 

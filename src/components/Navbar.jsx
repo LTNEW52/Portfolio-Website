@@ -20,6 +20,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
     { name: 'Portfolio', href: '#projects' },
     { name: 'Skills', href: '#skills' },
     { name: 'Education', href: '#education' },
+    { name: 'Publications', href: '#publications' },
   ]
 
   return (
