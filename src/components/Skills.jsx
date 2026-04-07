@@ -3,16 +3,6 @@ import { motion } from 'framer-motion'
 const Skills = () => {
   const skillCategories = [
     {
-      name: 'Machine Learning',
-      image: '/Machine learning.jpg',
-      skills: ['Computer Vision (YOLO)', 'NLP', 'Machine Learning', 'Deep Learning']
-    },
-    {
-      name: 'Programming',
-      image: '/Programming.jpg',
-      skills: ['Python', 'React', 'SQL', 'C', 'Assembly']
-    },
-    {
       name: 'Cybersecurity',
       image: '/Cybersecurity.jpg',
       skills: ['Ethical Hacking', 'Penetration Testing', 'Web Exploitation', 'OSINT', 'Network Security']
@@ -21,6 +11,16 @@ const Skills = () => {
       name: 'Tools & Technologies',
       image: '/Tools Technique.png',
       skills: ['Nmap', 'Wireshark', 'Burpsuite', 'Linux', 'Git']
+    },
+    {
+      name: 'Programming',
+      image: '/Programming.jpg',
+      skills: ['Python', 'React', 'SQL', 'C', 'Assembly']
+    },
+    {
+      name: 'Machine Learning',
+      image: '/Machine learning.jpg',
+      skills: ['Computer Vision (YOLO)', 'NLP', 'Machine Learning', 'Deep Learning']
     }
   ]
 

@@ -18,10 +18,10 @@ const About = () => {
   const certifications = 4 // From your education section
 
   const stats = [
-    { icon: <FiCode />, value: `${totalProjects}+`, label: 'Projects Completed' },
-    { icon: <FiCpu />, value: `${mlProjects}+`, label: 'ML Projects' },
     { icon: <FiShield />, value: `${securityProjects}+`, label: 'Security Projects' },
     { icon: <FiAward />, value: `${certifications}`, label: 'Certifications' },
+    { icon: <FiCode />, value: `${totalProjects}+`, label: 'Projects Completed' },
+    { icon: <FiCpu />, value: `${mlProjects}+`, label: 'ML Projects' },
   ]
 
   return (
@@ -50,27 +50,27 @@ const About = () => {
           >
             <div className="space-y-4 text-gray-600 dark:text-gray-400">
               <p>
-                I am a motivated undergraduate from Green University of Bangladesh, 
-                pursuing a B.Sc. in Computer Science and Engineering. My primary focus 
-                is on machine learning and natural language processing, complemented by 
-                practical experience in cybersecurity and ethical hacking.
+                I am a Computer Science undergraduate from Green University of Bangladesh, 
+                passionate about cybersecurity, ethical hacking, and machine learning. I'm actively 
+                learning penetration testing, web security, and developing security tools while also 
+                pursuing research in natural language processing and computer vision.
               </p>
               <p>
-                Currently working on my thesis in Machine Learning & NLP Research, focusing 
-                on advanced natural language processing using Python-based ML workflows. My 
-                academic journey includes hands-on projects in computer vision (YOLOv11), 
-                deep learning, and IoT integration. I combine technical skills with creative 
-                problem-solving to develop intelligent solutions.
+                My hands-on experience includes building Python-based OSINT tools (Apocrypha), 
+                participating in CTF challenges, and learning about vulnerability assessment and 
+                information security. I've earned certifications in Ethical Hacking and Endpoint 
+                Security, and I'm committed to deepening my cybersecurity knowledge through practical 
+                projects and continuous learning.
               </p>
               <p>
-                Beyond research, I have hands-on experience in penetration testing, security 
-                tools development, and CTF challenges. I'm passionate about continuous learning 
-                and exploring cutting-edge technologies in AI, ML, and data science.
+                Beyond security, I'm also exploring machine learning and NLP through academic research 
+                and projects. I enjoy solving complex problems and combining technical skills with 
+                creative approaches to develop secure and intelligent solutions.
               </p>
             </div>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              {['Machine Learning', 'NLP Research', 'Computer Vision', 'Deep Learning', 'Python', 'Cybersecurity'].map((trait) => (
+              {['Cybersecurity', 'Ethical Hacking', 'OSINT', 'Web Security', 'Python', 'Machine Learning'].map((trait) => (
                 <span
                   key={trait}
                   className="px-4 py-2 bg-primary-50 dark:bg-primary-900/30 text-primary-600 

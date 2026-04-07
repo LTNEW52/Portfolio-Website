@@ -17,10 +17,10 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Experience', href: '#experience' },
+    { name: 'Publications', href: '#publications' },
     { name: 'Portfolio', href: '#projects' },
     { name: 'Skills', href: '#skills' },
     { name: 'Education', href: '#education' },
-    { name: 'Publications', href: '#publications' },
   ]
 
   return (

@@ -7,16 +7,6 @@ const Projects = () => {
 
   const projects = [
     {
-      id: 1,
-      title: 'Electronic Component Detection (YOLOv11)',
-      description: 'Developed an object detection system using YOLOv11 for electronic component recognition. Implemented dataset preparation, model training, and performance evaluation. Built with Streamlit for easy interaction and visualization.',
-      image: '/Electronic component.png',
-      tags: ['Python', 'YOLOv11', 'Computer Vision', 'OpenCV', 'Streamlit'],
-      category: 'ml',
-      github: 'https://github.com/LTNEW52/Bondstein-Project-Electronic-Component-Detection',
-      demo: null,
-    },
-    {
       id: 2,
       title: 'Apocrypha - OSINT Reconnaissance Tool',
       description: 'Designed and developed a comprehensive Python-based reconnaissance tool to automate information gathering tasks. Implemented modules for IP/MAC manipulation, domain intelligence, DNS reconnaissance, and web information gathering from a single CLI interface.',
@@ -47,6 +37,16 @@ const Projects = () => {
       demo: null,
     },
     {
+      id: 1,
+      title: 'Electronic Component Detection (YOLOv11)',
+      description: 'Developed an object detection system using YOLOv11 for electronic component recognition. Implemented dataset preparation, model training, and performance evaluation. Built with Streamlit for easy interaction and visualization.',
+      image: '/Electronic component.png',
+      tags: ['Python', 'YOLOv11', 'Computer Vision', 'OpenCV', 'Streamlit'],
+      category: 'ml',
+      github: 'https://github.com/LTNEW52/Bondstein-Project-Electronic-Component-Detection',
+      demo: null,
+    },
+    {
       id: 5,
       title: 'Aloghor - Bangla Book Club Platform',
       description: 'Full-stack MERN application for an online book club community. Features include book browsing, purchasing functionality, and member communication. Designed to promote reading culture and community engagement in Bengali-speaking audiences.',
@@ -60,8 +60,8 @@ const Projects = () => {
 
   const filters = [
     { name: 'All', value: 'all' },
-    { name: 'Machine Learning', value: 'ml' },
     { name: 'Security', value: 'security' },
+    { name: 'Machine Learning', value: 'ml' },
     { name: 'Web', value: 'web' },
   ]
 

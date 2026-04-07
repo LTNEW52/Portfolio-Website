@@ -4,6 +4,20 @@ import { FiBriefcase, FiCalendar, FiMapPin } from 'react-icons/fi'
 const Experience = () => {
   const experiences = [
     {
+      id: 3,
+      title: 'Apocrypha - Python-Based Reconnaissance Tool',
+      company: 'Personal Project',
+      location: 'Remote',
+      period: '2025',
+      description: [
+        'Designed and developed a Python-based reconnaissance tool for automated information gathering',
+        'Implemented modules for target enumeration and basic OSINT workflows',
+        'Built modular architecture for easy extension and maintenance',
+        'Part of a bigger module collection for penetration testing and ethical hacking',
+      ],
+      type: 'Personal Project',
+    },
+    {
       id: 1,
       title: 'Machine Learning & NLP Research Project (Thesis)',
       company: 'Green University of Bangladesh',
@@ -30,20 +44,6 @@ const Experience = () => {
         'Performed model training, testing, and performance evaluation',
       ],
       type: 'Workshop',
-    },
-    {
-      id: 3,
-      title: 'Apocrypha - Python-Based Reconnaissance Tool',
-      company: 'Personal Project',
-      location: 'Remote',
-      period: '2025',
-      description: [
-        'Designed and developed a Python-based reconnaissance tool for automated information gathering',
-        'Implemented modules for target enumeration and basic OSINT workflows',
-        'Built modular architecture for easy extension and maintenance',
-        'Part of a bigger module collection for penetration testing and ethical hacking',
-      ],
-      type: 'Personal Project',
     },
   ]
 
