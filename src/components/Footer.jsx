@@ -29,8 +29,8 @@ const Footer = () => {
               LTNEW52
             </a>
             <p className="mt-4 text-gray-600 dark:text-gray-400 text-sm">
-              ML & NLP researcher and computer vision developer passionate about machine learning, 
-              natural language processing, and building intelligent solutions.
+              Cybersecurity Analyst passionate about ethical hacking, OSINT, and web security. 
+              Also pursuing applied research in Machine Learning and NLP for security applications.
             </p>
           </div>
 

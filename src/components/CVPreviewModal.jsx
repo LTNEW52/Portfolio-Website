@@ -7,8 +7,8 @@ const CVPreviewModal = ({ isOpen, onClose }) => {
 
   const handleDownloadPDF = () => {
     const link = document.createElement('a')
-    link.href = '/LabibTahmid_v1.pdf'
-    link.download = 'LabibTahmid_v1.pdf'
+    link.href = '/LabibTahmid_v2.pdf'
+    link.download = 'LabibTahmid_v2.pdf'
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -48,7 +48,7 @@ const CVPreviewModal = ({ isOpen, onClose }) => {
           {/* CV Preview */}
           <div className="mb-6 bg-gray-100 dark:bg-dark-300 rounded-lg overflow-auto max-h-[600px]">
             <embed
-              src="/LabibTahmid_v1.pdf"
+              src="/LabibTahmid_v2.pdf"
               type="application/pdf"
               className="w-full h-full"
               style={{ height: '600px' }}

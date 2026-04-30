@@ -50,27 +50,15 @@ const About = () => {
           >
             <div className="space-y-4 text-gray-600 dark:text-gray-400">
               <p>
-                I am a Computer Science undergraduate from Green University of Bangladesh, 
-                passionate about cybersecurity, ethical hacking, and machine learning. I'm actively 
-                learning penetration testing, web security, and developing security tools while also 
-                pursuing research in natural language processing and computer vision.
+                I'm a Computer Science undergraduate at Green University of Bangladesh and a Cybersecurity Analyst Intern at Bengal Infosec Limited. With hands-on exposure to cybersecurity fundamentals, OSINT, web security, and penetration testing workflows, I build practical security expertise. My projects include developing Apocrypha—a Python-based OSINT tool—and comprehensive web security testing through PortSwigger Academy and CTF platforms. I hold Cisco certifications in Ethical Hacking and Endpoint Security.
               </p>
               <p>
-                My hands-on experience includes building Python-based OSINT tools (Apocrypha), 
-                participating in CTF challenges, and learning about vulnerability assessment and 
-                information security. I've earned certifications in Ethical Hacking and Endpoint 
-                Security, and I'm committed to deepening my cybersecurity knowledge through practical 
-                projects and continuous learning.
-              </p>
-              <p>
-                Beyond security, I'm also exploring machine learning and NLP through academic research 
-                and projects. I enjoy solving complex problems and combining technical skills with 
-                creative approaches to develop secure and intelligent solutions.
+                Beyond practical security work, I pursue applied research in Machine Learning and NLP, with current focus on adversarial attacks against Bangla spam classifiers. I've published the BTTC dataset on Mendeley Data for spam detection and linguistic analysis. I enjoy combining technical security skills with AI/ML research to develop solutions that are both secure and intelligent.
               </p>
             </div>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              {['Cybersecurity', 'Ethical Hacking', 'OSINT', 'Web Security', 'Python', 'Machine Learning'].map((trait) => (
+              {['Cybersecurity', 'Ethical Hacking', 'Penetration Testing', 'OSINT', 'Web Security', 'Machine Learning', 'Python', 'Linux'].map((trait) => (
                 <span
                   key={trait}
                   className="px-4 py-2 bg-primary-50 dark:bg-primary-900/30 text-primary-600 

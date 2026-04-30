@@ -3,10 +3,11 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
-import Projects from './components/Projects'
 import Experience from './components/Experience'
-import Education from './components/Education'
+import Projects from './components/Projects'
 import Publications from './components/Publications'
+import Education from './components/Education'
+import CertificationsAwards from './components/CertificationsAwards'
 import Footer from './components/Footer'
 
 function App() {
@@ -41,10 +42,11 @@ function App() {
         <Hero />
         <About />
         <Experience />
-        <Publications />
         <Projects />
         <Skills />
         <Education />
+        <Publications />
+        <CertificationsAwards />
       </main>
       <Footer />
     </div>

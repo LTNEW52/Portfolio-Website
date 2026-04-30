@@ -4,46 +4,18 @@ import { FiBriefcase, FiCalendar, FiMapPin } from 'react-icons/fi'
 const Experience = () => {
   const experiences = [
     {
-      id: 3,
-      title: 'Apocrypha - Python-Based Reconnaissance Tool',
-      company: 'Personal Project',
-      location: 'Remote',
-      period: '2025',
-      description: [
-        'Designed and developed a Python-based reconnaissance tool for automated information gathering',
-        'Implemented modules for target enumeration and basic OSINT workflows',
-        'Built modular architecture for easy extension and maintenance',
-        'Part of a bigger module collection for penetration testing and ethical hacking',
-      ],
-      type: 'Personal Project',
-    },
-    {
-      id: 1,
-      title: 'Machine Learning & NLP Research Project (Thesis)',
-      company: 'Green University of Bangladesh',
+      id: 0,
+      title: 'Cybersecurity Analyst Intern',
+      company: 'Bengal Infosec Limited',
       location: 'Dhaka, Bangladesh',
-      period: '2025 - Present',
+      period: '04/2026 - Present',
       description: [
-        'Conducting an applied research project focused on natural language processing using machine learning techniques',
-        'Working on data preprocessing, model training, evaluation, and experimental analysis',
-        'Using Python-based ML workflows for building and testing NLP models',
-        'Collaborating with faculty advisors on research methodology and results',
+        'Developed foundational knowledge in networking and cybersecurity concepts including OSI, ARP, subnetting, routing, VLANs, DNS, DHCP, NAT, proxying, reverse proxying, and load balancing',
+        'Gained practical exposure to network infrastructure and security technologies such as routers, switches, firewalls, IDS, and IPS',
+        'Performed Cisco Packet Tracer lab exercises covering static routing, RIP, DHCP, VLANs, subinterfaces, and ACL-based traffic filtering',
+        'Currently strengthening Linux fundamentals with emphasis on Ubuntu Server, command-line utilities, and Linux file systems',
       ],
-      type: 'Research',
-    },
-    {
-      id: 2,
-      title: 'Electronic Component Detection - Computer Vision Project',
-      company: 'AI / ML Workshop Project',
-      location: 'Dhaka, Bangladesh',
-      period: '2025',
-      description: [
-        'Developed an object detection system using YOLOv11 for electronic component recognition',
-        'Participated in a hands-on workshop for practical AI/ML experience',
-        'Gained practical experience in dataset preparation and annotation',
-        'Performed model training, testing, and performance evaluation',
-      ],
-      type: 'Workshop',
+      type: 'Internship',
     },
   ]
 
@@ -57,14 +29,14 @@ const Experience = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="section-title">Experience & Projects</h2>
+          <h2 className="section-title">Work Experience</h2>
           <p className="section-subtitle">
-            My hands-on experience and projects
+            My professional experience and internships
           </p>
         </motion.div>
 
         {/* Timeline */}
-        <div className="relative">
+        <div className="relative w-full max-w-4xl mx-auto">
           {/* Timeline line */}
           <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-1 h-full bg-primary-200 dark:bg-primary-900/30 rounded-full"></div>
 
@@ -77,15 +49,13 @@ const Experience = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`relative flex flex-col md:flex-row gap-8 ${
-                  index % 2 === 0 ? 'md:flex-row-reverse' : ''
-                }`}
+                className="relative flex flex-col gap-8 w-full"
               >
                 {/* Timeline dot */}
                 <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white dark:border-dark-100 shadow-lg z-10"></div>
 
                 {/* Content */}
-                <div className={`md:w-7/12 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'} ml-8 md:ml-0`}>
+                <div className="ml-8 md:ml-0 md:w-full">
                   <div className="card p-6 hover:-translate-y-1">
                     <div className="flex items-center gap-2 mb-2">
                       <span className="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 text-sm rounded-full font-medium">
@@ -121,9 +91,6 @@ const Experience = () => {
                     </ul>
                   </div>
                 </div>
-
-                {/* Spacer for alternating layout */}
-                <div className="hidden md:block md:w-5/12"></div>
               </motion.div>
             ))}
           </div>

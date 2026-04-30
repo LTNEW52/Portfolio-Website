@@ -49,7 +49,7 @@ const Hero = () => {
               <span className="text-gray-900 dark:text-white">Labib</span> <span className="bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">Tahmid</span>
             </h1>
             <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-6">
-              Cybersecurity Enthusiast | Aspiring Ethical Hacker | ML & NLP Researcher
+              Cybersecurity Analyst | OSINT & Web Security Specialist | ML & NLP Researcher
             </h2>
 
             {/* CTA Buttons */}
